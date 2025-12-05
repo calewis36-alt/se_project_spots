@@ -24,3 +24,6 @@ Good luck and have fun!
  
  Check out [this video](https://drive.google.com/file/d/1reKbBwwUSlnc6g3wJlH9IXguI7yMtgOn/view?usp=sharing), where I describe my 
  project and some challenges I faced while building it.
+
+
+https://calewis36-alt.github.io/se_project_spots/
