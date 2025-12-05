@@ -38,11 +38,12 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  display: -webkit-box;
   max-width: 420px;
 
 }
 
-.profile__edit_button {
+.profile__edit-button {
   padding: 0;
   margin-top: auto;
   border: none;
@@ -52,19 +53,20 @@
   gap: 8px;
 }
 
-.profile_edit_icon {
-  width: 11.65px;
-  height: 3.21px;
+.profile__edit-icon {
+  height: 16px;
+  width: 18px;
+
 }
 
-.profile__add_button {
+.profile__add-button {
   display: flex;
   align-items: center;
   gap: 8px;
   justify-content: center;
   width: 149px;
   height: 52px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-left: auto;
   margin-top: auto;
   border: none;
@@ -73,18 +75,18 @@
   transition: background-color 1s;
 }
 
-.profile__add_button:hover {
+.profile__add-button:hover {
   background-color: #212121;
   opacity: 0.6;
 }
 
-.profile__add_button:focus,
-.profile__add_button:active {
+.profile__add-button:focus,
+.profile__add-button:active {
   background-color: #212121;
   transition: none;
 }
 
-.profile__plus_icon {
+.profile__plus-icon {
   height: 12px;
   width: 12px;
   border: 2px;
@@ -104,6 +106,7 @@
       margin: 0 0 12px;
       height: 80px;
       width: 80px;
+      border-radius: 10px;
     }
 
     .profile__name {
@@ -121,7 +124,7 @@
       margin: 0 0 20px;
     }
 
-    .profile__add_button {
+    .profile__add-button {
       width: 100%;
       margin: 0;
     }
