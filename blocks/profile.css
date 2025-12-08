@@ -10,7 +10,7 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -106,7 +106,7 @@
       margin: 0 0 12px;
       height: 80px;
       width: 80px;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     .profile__name {
@@ -127,5 +127,6 @@
     .profile__add-button {
       width: 100%;
       margin: 0;
+      justify-content: center;
     }
 }
