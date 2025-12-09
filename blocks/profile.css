@@ -129,4 +129,9 @@
       margin: 0;
       justify-content: center;
     }
+
+    .profile__edit-button {
+      justify-content: center;
+      margin: auto;
+    }
 }
