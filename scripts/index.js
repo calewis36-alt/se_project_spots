@@ -86,7 +86,7 @@ function handleAddCardSubmit(evt) {
   PostImageCaption.textContent = newPostImageCaption.value;
 }
 
-addCardFormElement.addEventListener('submit', handleAddCardSubmit);
+newPostFormElement.addEventListener('submit', handleAddCardSubmit);
 
 initialCards.forEach(function (card,) {
   console.log(card.name);
