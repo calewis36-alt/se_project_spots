@@ -1,4 +1,3 @@
-
 .card__image {
   height: 413px;
   width: 100%;
@@ -28,7 +27,7 @@
   background-image: url(../images/like-icon.svg);
   width: 23px;
   height: 20px;
-  border: 2px;
+  border: none;
   background-color: transparent;
   opacity: 40%;
   margin: 6px 0 0;
@@ -43,5 +42,4 @@
   .card__image {
     height: 288px;
   }
-
 }

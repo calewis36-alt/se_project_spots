@@ -1,5 +1,4 @@
 .footer {
-
 }
 
 .footer__copyright {
@@ -14,13 +13,12 @@
   font-size: 500;
 }
 
-@media screen and (max-width:627px) {
+@media screen and (max-width: 627px) {
   .footer__copyright {
     flex-direction: column;
     max-width: 288px;
-    align-items:center;
+    align-items: center;
     text-align: center;
     padding-top: 60px;
   }
-
 }

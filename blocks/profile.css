@@ -24,7 +24,6 @@
   font-size: 32px;
   line-height: 1;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -40,7 +39,6 @@
   -webkit-box-orient: vertical;
   display: -webkit-box;
   max-width: 420px;
-
 }
 
 .profile__edit-button {
@@ -51,12 +49,19 @@
   align-items: flex-start;
   display: flex;
   gap: 8px;
+  opacity: 70%;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .profile__edit-icon {
   height: 16px;
   width: 18px;
-
 }
 
 .profile__add-button {
@@ -72,12 +77,13 @@
   border: none;
   color: #fcf5e5;
   background-color: #212121;
-  transition: background-color 1s;
+  transition: opacity 0.2s linear;
 }
 
 .profile__add-button:hover {
   background-color: #212121;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .profile__add-button:focus,
@@ -89,49 +95,48 @@
 .profile__plus-icon {
   height: 12px;
   width: 12px;
-  border: 2px;
 }
 
-@media screen and (max-width:627px) {
+@media screen and (max-width: 627px) {
   .profile {
     max-width: 288px;
     flex-direction: column;
     max-width: 288px;
-    align-items:center;
+    align-items: center;
     text-align: center;
     padding-top: 20px;
   }
 
-    .profile__avatar {
-      margin: 0 0 12px;
-      height: 80px;
-      width: 80px;
-      border-radius: 8px;
-    }
+  .profile__avatar {
+    margin: 0 0 12px;
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+  }
 
-    .profile__name {
-      font-size: 20px;
-      margin: 0 0 6px;
-      max-width: 288px;
-    }
+  .profile__name {
+    font-size: 20px;
+    margin: 0 0 6px;
+    max-width: 288px;
+  }
 
-    .profile__description {
-      margin: 0 0 32px;
-      max-width: 288px;
-    }
+  .profile__description {
+    margin: 0 0 32px;
+    max-width: 288px;
+  }
 
-    .profile__column {
-      margin: 0 0 20px;
-    }
+  .profile__column {
+    margin: 0 0 20px;
+  }
 
-    .profile__add-button {
-      width: 100%;
-      margin: 0;
-      justify-content: center;
-    }
+  .profile__add-button {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
 
-    .profile__edit-button {
-      justify-content: center;
-      margin: auto;
-    }
+  .profile__edit-button {
+    justify-content: center;
+    margin: auto;
+  }
 }
