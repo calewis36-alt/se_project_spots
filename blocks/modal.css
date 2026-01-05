@@ -41,6 +41,22 @@
   opacity: 40%;
 }
 
+.modal__close-button_type_preview {
+  top: 0;
+  right: -52.5px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+}
+
+.modal__close-button_type_preview:hover {
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 40%;
+}
+
 .modal__close-button:hover {
   opacity: 100%;
   cursor: pointer;
@@ -107,6 +123,28 @@
   transition: none;
 }
 
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vh;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  color: #fff;
+  background-color: #212121;
+  border-radius: 8px;
+  padding: 4px 8px;
+  display: inline-block;
+}
+
+
 @media screen and (max-width: 627px) {
   .modal__container {
     padding: 12px 12px;
@@ -136,5 +174,12 @@
     position: absolute;
     top: 0;
     right: 12px;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .modal__close-button_type_preview {
+    top: -50px;
+    right: 0;
   }
 }
