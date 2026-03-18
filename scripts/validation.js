@@ -1,0 +1,72 @@
+const showInputError = (formElement, inputElement, errorMessage) => {
+  const errorMessageElement = formElement.querySelector(
+    `#${inputElement.id}-error`,
+  );
+  errorMessageElement.textContent = errorMessage;
+  inputElement.classList.add("modal__input_type_error");
+};
+
+const hideInputError = (formElement, inputElement) => {
+  const errorMessageElement = formElement.querySelector(
+    `#${inputElement.id}-error`,
+  );
+  errorMessageElement.textContent = "";
+  inputElement.classList.remove("modal__input_type_error");
+};
+
+const checkInputValidity = (formElement, inputElement) => {
+  if (!inputElement.validity.valid) {
+    showInputError(formElement, inputElement, inputElement.validationMessage);
+  } else {
+    hideInputError(formElement, inputElement);
+  }
+};
+
+const profileDescriptionError = document.querySelector(
+  ".profile-description-input-error",
+);
+
+const hasInvalidInput = (inputList) => {
+  return inputList.some((input) => {
+    return !input.validity.valid;
+  });
+};
+
+const toggleButtonState = (inputList, buttonElement) => {
+  console.log(hasInvalidInput(inputList));
+  if (hasInvalidInput(inputList)) {
+    disableButton(buttonElement);
+  } else {
+    buttonElement.disabled = false;
+  }
+};
+
+const disableButton = (buttonElement) => {
+  buttonElement.disabled = true;
+};
+
+const setEventListeners = (formElement) => {
+  const inputList = Array.from(formElement.querySelectorAll(".modal__input"));
+  const buttonElement = formElement.querySelector(".modal__submit-button");
+
+  //console.log(inputList);
+  //console.log(buttonElement)
+
+  toggleButtonState(inputList, buttonElement);
+
+  inputList.forEach((inputElement) => {
+    inputElement.addEventListener("input", function () {
+      checkInputValidity(formElement, inputElement);
+      toggleButtonState(inputList, buttonElement);
+    });
+  });
+};
+
+const enableValidation = () => {
+  const formList = document.querySelectorAll(".modal__form");
+  formList.forEach((formElement) => {
+    setEventListeners(formElement);
+  });
+};
+
+enableValidation();
