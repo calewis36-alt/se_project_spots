@@ -58,7 +58,7 @@
 }
 
 .modal__close-button:hover {
-  opacity: 100%;
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -98,10 +98,11 @@
 }
 
 .modal__input:hover{
-  border: 1px solid rgba(33, 33, 33);
+  border: 1px solid rgba(33,33,33);
 }
 
 .modal__error {
+  visibility: hidden;
   display: block;
   color: #FF0000;
   opacity: .7;
@@ -109,6 +110,11 @@
   font-weight: 500;
   margin-top: 8px;
 
+}
+
+.modal__error_visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__submit-button {
