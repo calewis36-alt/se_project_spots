@@ -22,7 +22,7 @@ Good luck and have fun!
 
  ## Project Pitch Video
  
- Check out [this video](https://drive.google.com/file/d/1reKbBwwUSlnc6g3wJlH9IXguI7yMtgOn/view?usp=sharing), where I describe my 
+ Check out [this video](https://drive.google.com/file/d/1n8p_eFbL8oYWHpwxtNT4fI00zyrT4yLC/view?usp=sharing), where I describe my 
  project and some challenges I faced while building it.
 
 
